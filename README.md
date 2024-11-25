@@ -40,10 +40,12 @@ Clone the project repository to your local machine:
 ```bash
 git clone https://github.com/Subbu2025/finapp.git
 cd finapp
-
+```
 2. Build the Docker Image
 Build the Docker image using the provided Dockerfile:
+```bash
 docker build -t finapp:v1 .
+```
 - finapp:v1: Name and tag of the Docker image.
 
 3. Verify the Docker Image
