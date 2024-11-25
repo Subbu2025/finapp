@@ -38,15 +38,15 @@ Ensure the following are installed on your system:
 ### 1. Clone the Repository
 Clone the project repository to your local machine:
 ```bash
-git clone https://github.com/Subbu2025/finapp.git
-cd finapp
+git clone https://github.com/Subbu2025/flask-report-viewer.git
+cd flask-report-viewer
 ```
 ### 2. Build the Docker Image
 Build the Docker image using the provided Dockerfile:
 ```bash
-docker build -t finapp:v1 .
+docker build -t flask-report-viewer:v1 .
 ```
-- finapp:v1: Name and tag of the Docker image.
+- flask-report-viewer:v1: Name and tag of the Docker image.
 
 ### 3. Verify the Docker Image
 List all available Docker images:
@@ -56,7 +56,7 @@ docker images
 ### 4. Run the Docker Container
 Start a container using the built image:
 ```bash
-docker run -d -p 80:80 --name finapp finapp:v1
+docker run -d -p 80:80 --name flask-report-viewer flask-report-viewer:v1
 ```
 - -d: Runs the container in detached mode.
 - -p 80:80: Maps port 80 of the host to port 80 of the container.
@@ -71,7 +71,7 @@ docker ps
 Local Access:
 Open a browser and navigate to:
 ```
-http://localhost
+http://localhost:5000
 ```
 
 Hosted Access:
@@ -83,11 +83,11 @@ http://example.com/
 ## Stop and Remove the Container
 Stop the Container:
 ```bash
-docker stop finapp
+docker stop flask-report-viewer
 ```
 Remove the Container:
 ```bash
-docker rm finapp
+docker rm flask-report-viewer
 ```
 ## Future Enhancements
 - Optimize Docker Image: Use multi-stage builds to reduce image size.
