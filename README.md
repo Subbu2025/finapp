@@ -43,18 +43,15 @@ cd finapp
 
 2. Build the Docker Image
 Build the Docker image using the provided Dockerfile:
-```bash
 docker build -t finapp:v1 .
 - finapp:v1: Name and tag of the Docker image.
 
 3. Verify the Docker Image
 List all available Docker images:
-```bash
 docker images
 
 4. Run the Docker Container
 Start a container using the built image:
-```bash
 docker run -d -p 80:80 --name finapp finapp:v1
 - -d: Runs the container in detached mode.
 - -p 80:80: Maps port 80 of the host to port 80 of the container.
@@ -62,7 +59,6 @@ docker run -d -p 80:80 --name finapp finapp:v1
 
 5. Verify Running Containers
 Check if the container is running:
-```bash
 docker ps
 
 ## Access the Application
@@ -76,11 +72,9 @@ http://sangamsoftsol.com/
 
 ## Stop and Remove the Container
 Stop the Container:
-```bash
 docker stop finapp
 
 Remove the Container:
-```bash
 docker rm finapp
 
 ## Future Enhancements
