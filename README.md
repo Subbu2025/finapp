@@ -1,23 +1,10 @@
-Flask Report Viewer Application
-Overview
-This Flask-based web application provides a platform to view dynamic and static reports, leveraging Power BI for visualizations. 
-The application is live at http://sangamsoftsol.com/, hosted on AWS with domain management via Route53.
+# Flask Report Viewer Application
 
-```python
-from flask import Flask
+## Features
+- View static pages (Home, About).
+- Dynamic rendering of Power BI reports.
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Hello, Flask!"
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-
-
-
-
-
-
+## Installation
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/username/flask-report-viewer.git
