@@ -71,7 +71,7 @@ docker ps
 Local Access:
 Open a browser and navigate to:
 ```
-http://localhost:5000
+http://localhost
 ```
 
 Hosted Access:
