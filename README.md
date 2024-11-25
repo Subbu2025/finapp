@@ -94,4 +94,39 @@ docker rm finapp
 - CI/CD Integration: Automate image builds and deployments using Jenkins or GitHub Actions.
 - HTTPS Support: Configure SSL/TLS for secure access.
 - Scalability: Deploy using Kubernetes for better scalability and management.
+# Flask Application
+
+## Screenshots
+
+### Home Page
+![Home Page](images/HomePage.png "Home Page Screenshot")
+
+### About Page
+![About Page](images/About.png "About Page Screenshot")
+
+### Docker Image and Container
+![Docker Image and Container](images/Docker-Image-Container.png "Docker Image and Container")
+
+### Reports
+#### Balance Sheet Report
+![Balance Sheet Report](images/Report-BalanceSheet.png "Balance Sheet Report")
+
+#### CRM Analytics Report
+![CRM Analytics Report](images/Report-CRM Analytics.png "CRM Analytics Report")
+
+#### Financial Analytics Report
+![Financial Analytics Report](images/Report-Financial Analytics.png "Financial Analytics Report")
+
+#### HR Analytics Report
+![HR Analytics Report](images/Report-HR Analytics.png "HR Analytics Report")
+
+#### Healthcare Analysis Report
+![Healthcare Analysis Report](images/Report-Healthcare Analysis.png "Healthcare Analysis Report")
+
+#### Retail Insights Report
+![Retail Insights Report](images/Report-RetailInsights.png "Retail Insights Report")
+
+### Route53 A Record Configuration
+![Route53 A Record](images/Route53-A-Record.png "Route53 A Record Screenshot")
+
 
