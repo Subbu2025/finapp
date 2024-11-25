@@ -112,14 +112,15 @@ docker rm finapp
 
 ### Reports:
 
+#### Healthcare Analysis Report
+![Healthcare Analysis Report](images/Report-Heathcare-Ananlysis.png "Healthcare Analysis Report")
+
 #### Financial Analytics Report
 ![Financial Analytics Report](images/Report-Financial%20Analytics.png "Financial Analytics Report")
 
 #### Balance Sheet Report
 ![Balance Sheet Report](images/Report-BalanceSheet.png "Balance Sheet Report")
 
-#### Healthcare Analysis Report
-![Healthcare Analysis Report](images/Report-Heathcare-Ananlysis.png "Healthcare Analysis Report")
 
 #### HR Analytics Report
 ![HR Analytics Report](images/Report-HR%20Analytics.png "HR Analytics Report")
