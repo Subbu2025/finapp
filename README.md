@@ -104,19 +104,16 @@ docker rm finapp
 ### Route53 A Record Configuration
 ![Route53 A Record](images/Route53-A-Record.png "Route53 A Record Screenshot")
 
-
 ### Home Page
 ![Home Page](images/HomePage.png "Home Page Screenshot")
 
 ### About Page
 ![About Page](images/About.png "About Page Screenshot")
 
-### Reports
-#### Healthcare Analysis Report
-![Healthcare Analysis Report](images/Report-Healthcare Analysis.png "Healthcare Analysis Report")
+### Reports:
 
 #### Financial Analytics Report
-![Financial Analytics Report](images/Report-Financial Analytics.png "Financial Analytics Report")
+![Financial Analytics Report](images/Report-Financial%20Analytics.png "Financial Analytics Report")
 
 #### Balance Sheet Report
 ![Balance Sheet Report](images/Report-BalanceSheet.png "Balance Sheet Report")
@@ -124,6 +121,13 @@ docker rm finapp
 #### CRM Analytics Report
 ![CRM Analytics Report](images/Report-CRM%20Analytics.png "CRM Analytics Report")
 
+#### HR Analytics Report
+![HR Analytics Report](images/Report-HR%20Analytics.png "HR Analytics Report")
 
+#### Retail Insights Report
+![Retail Insights Report](images/Report-RetailInsights.png "Retail Insights Report")
+
+#### Healthcare Analysis Report
+![Healthcare Analysis Report](images/Report-Healthcare%20Analysis.png "Healthcare Analysis Report")
 
 
