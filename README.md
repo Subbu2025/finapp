@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a Flask-based web application that has been containerized using Docker. The application serves as a dynamic platform for rendering reports and static content. The containerized application is accessible at [http://sangamsoftsol.com/](http://sangamsoftsol.com/) via AWS Route53.
+This project is a Flask-based web application that has been containerized using Docker. The application serves as a dynamic platform for rendering reports and static content. The containerized application is accessible using your website domain [http://example.com/](http://example.com/) via AWS Route53.
 
 ---
 
@@ -77,7 +77,7 @@ http://localhost
 Hosted Access:
 If deployed to an EC2 instance and mapped with AWS Route53, access the application at:
 ```
-http://sangamsoftsol.com/
+http://example.com/
 ```
 
 ## Stop and Remove the Container
