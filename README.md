@@ -121,6 +121,8 @@ docker rm finapp
 #### Balance Sheet Report
 ![Balance Sheet Report](images/Report-BalanceSheet.png "Balance Sheet Report")
 
+#### CRM Analytics Report
+![CRM Analytics Report](images/Report-CRM%20Analytics.png "CRM Analytics Report")
 
 
 
