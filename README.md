@@ -41,44 +41,54 @@ Clone the project repository to your local machine:
 git clone https://github.com/Subbu2025/finapp.git
 cd finapp
 ```
-2. Build the Docker Image
+### 2. Build the Docker Image
 Build the Docker image using the provided Dockerfile:
 ```bash
 docker build -t finapp:v1 .
 ```
 - finapp:v1: Name and tag of the Docker image.
 
-3. Verify the Docker Image
+### 3. Verify the Docker Image
 List all available Docker images:
+```bash
 docker images
-
-4. Run the Docker Container
+```
+### 4. Run the Docker Container
 Start a container using the built image:
+```bash
 docker run -d -p 80:80 --name finapp finapp:v1
+```
 - -d: Runs the container in detached mode.
 - -p 80:80: Maps port 80 of the host to port 80 of the container.
 - --name finapp: Assigns the container a name (finapp).
 
-5. Verify Running Containers
+### 5. Verify Running Containers
 Check if the container is running:
+```bash
 docker ps
-
+```
 ## Access the Application
 Local Access:
 Open a browser and navigate to:
+```
 http://localhost
+```
 
 Hosted Access:
 If deployed to an EC2 instance and mapped with AWS Route53, access the application at:
+```
 http://sangamsoftsol.com/
+```
 
 ## Stop and Remove the Container
 Stop the Container:
+```bash
 docker stop finapp
-
+```
 Remove the Container:
+```bash
 docker rm finapp
-
+```
 ## Future Enhancements
 - Optimize Docker Image: Use multi-stage builds to reduce image size.
 - CI/CD Integration: Automate image builds and deployments using Jenkins or GitHub Actions.
