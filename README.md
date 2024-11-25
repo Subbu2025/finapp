@@ -118,8 +118,8 @@ docker rm finapp
 #### Balance Sheet Report
 ![Balance Sheet Report](images/Report-BalanceSheet.png "Balance Sheet Report")
 
-#### CRM Analytics Report
-![CRM Analytics Report](images/Report-CRM%20Analytics.png "CRM Analytics Report")
+#### Healthcare Analysis Report
+![Healthcare Analysis Report](images/Report-Healthcare%20Analysis.png "Healthcare Analysis Report")
 
 #### HR Analytics Report
 ![HR Analytics Report](images/Report-HR%20Analytics.png "HR Analytics Report")
@@ -127,7 +127,10 @@ docker rm finapp
 #### Retail Insights Report
 ![Retail Insights Report](images/Report-RetailInsights.png "Retail Insights Report")
 
-#### Healthcare Analysis Report
-![Healthcare Analysis Report](images/Report-Healthcare%20Analysis.png "Healthcare Analysis Report")
+#### CRM Analytics Report
+![CRM Analytics Report](images/Report-CRM%20Analytics.png "CRM Analytics Report")
+
+
+
 
 
