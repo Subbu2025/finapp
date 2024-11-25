@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Sellenuity Consultant Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #6c757d, #343a40);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .content-section {
+            padding: 50px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .submenu-title {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Sellenuity Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/report">Reports</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Reports</h1>
+            <p>Explore our data-driven insights across multiple domains.</p>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+        <div class="container">
+            <div class="accordion" id="reportsAccordion">
+
+                <!-- Healthcare Analysis Submenu -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingHealthcare">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHealthcare" aria-expanded="true" aria-controls="collapseHealthcare">
+                            Healthcare Analysis
+                        </button>
+                    </h2>
+                    <div id="collapseHealthcare" class="accordion-collapse collapse show" aria-labelledby="headingHealthcare" data-bs-parent="#reportsAccordion">
+                        <div class="accordion-body">
+                            Gain insights into healthcare performance and efficiency.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Analysis Submenu -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFinancial">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinancial" aria-expanded="false" aria-controls="collapseFinancial">
+                            Financial Analysis
+                        </button>
+                    </h2>
+                    <div id="collapseFinancial" class="accordion-collapse collapse" aria-labelledby="headingFinancial" data-bs-parent="#reportsAccordion">
+                        <div class="accordion-body">
+                            Deep dive into financial data for better decision-making.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Retail Analysis Submenu -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingRetail">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRetail" aria-expanded="false" aria-controls="collapseRetail">
+                            Retail Analysis
+                        </button>
+                    </h2>
+                    <div id="collapseRetail" class="accordion-collapse collapse" aria-labelledby="headingRetail" data-bs-parent="#reportsAccordion">
+                        <div class="accordion-body">
+                            Transform your retail business with actionable data insights.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HR Analysis Submenu -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingHR">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHR" aria-expanded="false" aria-controls="collapseHR">
+                            HR Analytics
+                        </button>
+                    </h2>
+                    <div id="collapseHR" class="accordion-collapse collapse" aria-labelledby="headingHR" data-bs-parent="#reportsAccordion">
+                        <div class="accordion-body">
+                            Optimize workforce management with advanced HR analytics.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CRM Analytics Submenu -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingCRM">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCRM" aria-expanded="false" aria-controls="collapseCRM">
+                            CRM Analytics
+                        </button>
+                    </h2>
+                    <div id="collapseCRM" class="accordion-collapse collapse" aria-labelledby="headingCRM" data-bs-parent="#reportsAccordion">
+                        <div class="accordion-body">
+                            Enhance customer relationship management with insightful data.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Sellenuity Consultant Services. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

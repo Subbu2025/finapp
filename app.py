@@ -1,52 +1,6 @@
 from flask import Flask, render_template
-import psycopg2
 
 app = Flask(__name__)
-
-# PostgreSQL connection details
-DB_HOST = "localhost"
-DB_NAME = "postgres"
-DB_USER = "postgres"
-DB_PASSWORD = "Kusal"
-DB_PORT = "5432"
-
-# Database connection and cursor variables
-connection = None
-cursor = None
-
-def init_db():
-    """Initialize the database connection."""
-    global connection, cursor
-    try:
-        connection = psycopg2.connect(
-            host=DB_HOST,
-            database=DB_NAME,
-            user=DB_USER,
-            password=DB_PASSWORD,
-            port=DB_PORT
-        )
-        cursor = connection.cursor()
-        print("Connected to the PostgreSQL database.")
-    except psycopg2.Error as e:
-        print(f"Error connecting to the PostgreSQL database: {e}")
-        connection = None
-        cursor = None
-
-@app.before_request
-def before_request():
-    """Initialize the database connection before each request."""
-    if connection is None or cursor is None:
-        init_db()
-
-@app.teardown_appcontext
-def close_db(error=None):
-    """Close the database connection and cursor after each request."""
-    global connection, cursor
-    if cursor:
-        cursor.close()
-    if connection:
-        connection.close()
-        print("PostgreSQL connection closed.")
 
 # Define routes for the application
 @app.route('/')
@@ -82,20 +36,23 @@ def retail():
 def crm():
     return render_template('CRM.html')
 
-@app.route('/data')
-def fetch_data():
-    """Example route to fetch and display data from the database."""
-    if connection and cursor:
-        try:
-            query = "SELECT * FROM your_table LIMIT 5;"  # Replace 'your_table' with actual table name
-            cursor.execute(query)
-            rows = cursor.fetchall()
-            return f"<h1>Sample Data:</h1><pre>{rows}</pre>"
-        except psycopg2.Error as e:
-            return f"<h1>Error Fetching Data:</h1><pre>{e}</pre>"
+@app.route('/report/<report_type>')
+def dynamic_report(report_type):
+    """Render a dynamic report iframe based on the report type."""
+    report_links = {
+        "healthcare": "https://app.powerbi.com/view?r=eyJrIjoiMjMxMmIxYjktOTQyMy00NzU1LTkyMzQtNzRiODU3OTUxMGFmIiwidCI6IjAzNmY4MTVjLTNkOTItNDJmMi1hNTk1LWQ2OWUxN2EwMzE5NCJ9",
+        "financial": "https://app.powerbi.com/view?r=eyJrIjoiY2NjYzIyZGMtYjZjMi00NjA4LWE0MTMtZmNjY2E4NDM5MmQ4IiwidCI6IjAzNmY4MTVjLTNkOTItNDJmMi1hNTk1LWQ2OWUxN2EwMzE5NCJ9",
+        "retail": "https://app.powerbi.com/view?r=eyJrIjoiNzE1YTM5OWMtYzAyNS00OGRlLThkNTYtZDFmZWIyZjRjOTBkIiwidCI6IjAzNmY4MTVjLTNkOTItNDJmMi1hNTk1LWQ2OWUxN2EwMzE5NCJ9",
+        "hr": "https://app.powerbi.com/view?r=eyJrIjoiY2YwMTJlNzAtMTdmOC00ZGFmLTk5ZDgtNzAzMmE4N2ViMWJiIiwidCI6IjdiZTgzMDczLTJkY2ItNDg1OC05OTgwLTY4YjFiYjUzZGFmYyJ9",
+        "crm": "https://app.powerbi.com/view?r=eyJrIjoiNTI5ZGQyYWEtOTkwMS00M2M5LWI4YzUtN2YwOGIzYmExMmVjIiwidCI6IjdiZTgzMDczLTJkY2ItNDg1OC05OTgwLTY4YjFiYjUzZGFmYyJ9"
+    }
+    report_url = report_links.get(report_type)
+    if report_url:
+        return render_template('dynamic_report.html', report_url=report_url, report_type=report_type)
     else:
-        return "<h1>Database connection not established.</h1>"
+        return "<h1>Report not found.</h1>", 404
 
 # Flask app entry point
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=80)
+
