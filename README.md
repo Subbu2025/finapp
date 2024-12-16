@@ -128,8 +128,7 @@ docker rm flask-report-viewer
 #### Retail Insights Report
 ![Retail Insights Report](images/Report-RetailInsights.png "Retail Insights Report")
 
-#### CRM Analytics Report
-![CRM Analytics Report](images/Report-CRM%20Analytics.png "CRM Analytics Report")
+
 
 
 
